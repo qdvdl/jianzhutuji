@@ -1,5 +1,5 @@
 import store from '../store';
-//最终的修改
+//现在为什么变了
 let {userInfo,operation,siteinfo,login}=store.getters.getData;
 // console.log(operation);
 let Verification=(name)=>{
