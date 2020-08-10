@@ -9,8 +9,6 @@ import config from './config';
 const apiUrl=config.site_url; //API地址
 const userSID=config.userSID;//当前登录的
 
-// console.log(config);
-// console.log(config);
 let auth={
   username:config.user_name,
   password:config.user_pass,
@@ -29,7 +27,7 @@ const instance=axios.create({
 	responseType:"json",
 	headers:setHeader,
 	transformRequest: [function (data) {
-    //console.log(data)
+  
 		if(data){
 			data=qs.stringify(data)
 		}
@@ -53,7 +51,6 @@ function get(url,params,success,error){
 			error('请求发生错误,请检查接口异常!')
 		}
 	}).catch((err)=>{
-    // console.log(err)
 		error('当前环境网络较差!');
 	})
 }
