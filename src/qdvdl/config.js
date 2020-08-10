@@ -1,5 +1,5 @@
 import store from '../store';
-//就是提交
+//最终的修改
 let {userInfo,operation,siteinfo,login}=store.getters.getData;
 // console.log(operation);
 let Verification=(name)=>{
