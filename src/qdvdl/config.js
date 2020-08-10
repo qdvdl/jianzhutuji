@@ -1,5 +1,5 @@
 import store from '../store';
-//测试提交  终端测试
+//
 let {userInfo,operation,siteinfo,login}=store.getters.getData;
 // console.log(operation);
 let Verification=(name)=>{
